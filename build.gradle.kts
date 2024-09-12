@@ -35,9 +35,10 @@ allprojects {
     dependencies {
         compileOnly("org.projectlombok:lombok")
         annotationProcessor("org.projectlombok:lombok")
-
+        implementation("com.microsoft.playwright:playwright:1.41.0")
         implementation("org.springframework.boot:spring-boot-starter")
         testImplementation("org.springframework.boot:spring-boot-starter-test")
+
     }
 
     tasks.withType<Test> {
